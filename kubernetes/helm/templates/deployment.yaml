@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: status-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: status-dashboard
+  template:
+    metadata:
+      labels:
+        app: status-dashboard
+    spec:
+      containers:
+      - name: dashboard
+        image: nginx  # Placeholder; replace with a real dashboard app if desired
+        ports:
+        - containerPort: 80

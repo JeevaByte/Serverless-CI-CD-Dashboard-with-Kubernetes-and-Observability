@@ -1,0 +1,4 @@
+apiVersion: v2
+name: status-dashboard
+description: A simple dashboard for system status
+version: 0.1.0
